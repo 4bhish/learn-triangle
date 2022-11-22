@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+}
+:root {
+    --color-primary: #1b1b32;
+    --color-secondary: #0a0a23;
+}
+body{
+    margin: 0;
+    font-family: Karla;
+    width: 100vw;
+}
+/* Navbar */
+.navbar
+{
+    width: 100%;
+    height: 80px;
+    max-width: 100vw;
+    display: flex;
+    background: var(--color-secondary);
+    color: white;
+    
+}
+.header
+{
+    margin-right: 1rem;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 22px;
+}
+.list-triangle
+{
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    margin-right: 0.5rem;
+    align-self: center;
+}
+.link
+{
+    list-style: none;
+    padding: 8px;
+    font-size: 16px;
+}
+a
+{
+    color: white;
+    text-decoration: none;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.question-container
+{
+    background: var(--color-secondary);
+    color: white;
+    padding: 20px;
+    max-width: 70%;
+    margin: 2rem;
+}
+h4
+{
+    padding: 16px;
+}
+.input
+{
+    margin: auto;
+    padding: 20px;
+    align-self: center;
+    background: var(--color-primary);
+}
+label
+{
+    margin: auto;
+    padding: 20px;
+}
