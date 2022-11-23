@@ -13,42 +13,51 @@
         <ul class="list-triangle">
             <li class="link"><a href="/">Is Triangle</a></li>
             <li class="link"><a href="">Triangle Quiz</a></li>
-            <li class="link"><a href="/">Triangle Hypotenuse</a></li>
+            <li class="link"><a href="./hypotenus.html">Triangle Hypotenuse</a></li>
             <li class="link"><a href="/">Area Of Triangle</a></li>
         </ul>
     </nav>
+
     <main class="container">
-    <h1 class="heading">Triangle</h1>
+
+    
+
     <form action="" id="form-data">
         <div class="question-container">
+            <h1 class="heading">Triangle</h1>
             <h4>What is the third angle for the triangle where angle1 = 45° and angle2 = 45°?</h4>
 
-            <label ><input class="input" type="radio" value="45" name="one">45°</label>
+            <label ><input class="input" type="radio" value="45" name="one"> 45°</label>
             
 
-            <label ><input class="input" type="radio" value="60" name="one" >60°</label>
+            <label ><input class="input" type="radio" value="60" name="one" > 60°</label>
             
 
-            <label><input class="input" type="radio" value="90" name="one" >90°</label>
+            <label><input class="input" type="radio" value="90" name="one" > 90°</label>
             
 
         </div>
+        
         <div class="question-container">
             <h4>What is the third angle for the triangle where angle1 = 45° and angle2 = 45°?</h4>
 
-            <label ><input class="input" type="radio" value="obtuse" name="two">obtuse</label>
+            <label ><input class="input" type="radio" value="obtuse" name="two"> obtuse</label>
             
 
-            <label ><input class="input" type="radio" value="acute" name="two" >acute</label>
+            <label ><input class="input" type="radio" value="acute" name="two" > acute</label>
             
 
-            <label><input class="input" type="radio" value="acute" name="two" >acute</label>
+            <label><input class="input" type="radio" value="right angled" name="two" > right angled</label>
             
 
         </div>
     </form>
-    <button id="submit">Submit</button>
+    <div class="btnContainer">
+        <button class="submit" id="submit">Submit</button>
+        <h3 id="score"></h3>
+    </div>
     </main>
+
     <script src="Quiz.js"></script>
 </body>
 </html>
