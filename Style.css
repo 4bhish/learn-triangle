@@ -1,6 +1,11 @@
 *{
     margin: 0;
 }
+body
+{
+    width: 100%;
+    max-width: 100vw;
+}
 :root {
     --color-primary: #1b1b32;
     --color-secondary: #0a0a23;
@@ -8,7 +13,8 @@
 body{
     margin: 0;
     font-family: Karla;
-    width: 100vw;
+    width: 100%;
+    max-width: 100vw;
 }
 /* Navbar */
 .navbar
@@ -47,11 +53,4 @@ a
 {
     color: white;
     text-decoration: none;
-}
-/* Container */
-
-
-.container
-{
-    display: inline-block;
 }
