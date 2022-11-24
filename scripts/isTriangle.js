@@ -12,9 +12,9 @@ btnCheck.addEventListener("click",function clickHandle(){
    const angles = addAngle( Number(angleInputs[0].value),Number(angleInputs[1].value),Number(angleInputs[2].value) );
    if(angles === 180)
    {
-    outputDiv.innerText = ("Yayy your Triangle !!");
+    outputDiv.innerText = ("Congrats ! That forms the Triangle.🤩");
    } else
    {
-    outputDiv.innerText = ("uh Oh Thats not a triangle !!");
+    outputDiv.innerText = ("We are sorry to inform that does not form The Triangle.🥲");
    }
 })
