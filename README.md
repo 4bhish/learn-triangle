@@ -9,7 +9,7 @@ Create triangle knowledge app to showcase the triangles properties in user frien
 
 ## How to use:
 - Fill the input to get desired output in each activities
-- On correct you will notified with score
+- On correct answer you will notified with score
 - It is fun way to increase your knowledge about triangle
 
 ### Tech Used:
