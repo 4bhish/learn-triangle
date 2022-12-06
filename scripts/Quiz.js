@@ -16,5 +16,5 @@ btnSubmit.addEventListener("click",function submitHandler(){
         }
         i++;
     }
-    outputDiv.innerText =(`You have scored ${score}/2`);
+    outputDiv.innerText =(`You have scored ${score}/7`);
 })
