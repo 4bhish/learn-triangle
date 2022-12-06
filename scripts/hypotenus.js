@@ -9,12 +9,18 @@ function calculateHypotenuse(a,b)
 }
 function handleClick()
 {
-    const sumOfSquares = calculateHypotenuse(
-        Number(sides[0].value),
-        Number(sides[1].value)
-      );
-      const lengthOfHypotenuse = Math.sqrt(sumOfSquares);
-    result.innerText = (`Hypotenuse of given Value is ${lengthOfHypotenuse}`)
+    if(sides[0].value && sides[1].value)
+    {
+        const sumOfSquares = calculateHypotenuse(
+            Number(sides[0].value),
+            Number(sides[1].value)
+          );
+          const lengthOfHypotenuse = Math.sqrt(sumOfSquares);
+        result.innerText = (`Hypotenuse of given Value is ${lengthOfHypotenuse}`)
+    } else
+    {
+        result.innerText="You should give number for both sides !"
+    }
 }
 
 btnCal.addEventListener("click",handleClick)
