@@ -19,7 +19,7 @@ function handleClick()
         result.innerText = (`Hypotenuse of given Value is ${lengthOfHypotenuse}`)
     } else
     {
-        result.innerText="You should give number for both sides !"
+        result.innerText="You should give value for both sides !"
     }
 }
 

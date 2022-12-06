@@ -19,9 +19,13 @@ function handleClick()
     const sideTwo = Number(sides[1].value);
     const sideThree = Number(sides[2].value);
     
-    const areaOftriangle = semiPerimeter(sideOne,sideTwo,sideThree)
-    
-    result.innerText = (`The Area Of Triangle Using Heron's Formula is ${areaOftriangle}`)
+    if(sideOne && sideTwo && sideThree ){
+        const areaOftriangle = semiPerimeter(sideOne,sideTwo,sideThree)
+        result.innerText = (`The Area Of Triangle Using Heron's Formula is ${areaOftriangle}`)
+  } else
+  {
+    result.innerText = "Make sure you have given value for all side."
+  }
 }
 
 btnCal.addEventListener("click",handleClick)
