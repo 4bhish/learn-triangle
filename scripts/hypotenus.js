@@ -1,5 +1,4 @@
-const baseVal = document.querySelector("#base")
-const heightVal = document.querySelector("#height")
+const sides = document.querySelectorAll(".side")
 const btnCal = document.querySelector("#calculate")
 const result = document.querySelector("#result")
 
@@ -10,8 +9,12 @@ function calculateHypotenuse(a,b)
 }
 function handleClick()
 {
-    const sqrRoot = Math.sqrt(calculateHypotenuse(Number(baseVal.value),Number(heightVal.value)));
-    result.innerText = (`Hypotenuse of given Value is ${sqrRoot}`)
+    const sumOfSquares = calculateHypotenuse(
+        Number(sides[0].value),
+        Number(sides[1].value)
+      );
+      const lengthOfHypotenuse = Math.sqrt(sumOfSquares);
+    result.innerText = (`Hypotenuse of given Value is ${lengthOfHypotenuse}`)
 }
 
 btnCal.addEventListener("click",handleClick)
